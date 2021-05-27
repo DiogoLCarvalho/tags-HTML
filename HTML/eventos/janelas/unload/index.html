@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title> unload </title>
+
+</head>
+
+<body onunload=" return debug(event)"> 
+
+    <h1>Eventos Janelas</h1>
+    <h2>unload </h2>
+    <p>Quando o usuário atualiza ou fecha a página. Ele funciona mais não vemos direito. </p>
+
+    <!-- e = variavel = debug-->
+    <!-- o comando basicamente mostra o evento que ocorre antes e depois do evento -->
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type);
+            return 'Evento: ' + e.type;
+        }
+    </script>
+</body>
+
+</html>

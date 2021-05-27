@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title> keypress</title>
+
+</head>
+
+<body>
+    <h1>Evento Teclado</h1>
+    <h2>keypress</h2>
+    <p> QUando é pressionada</p>
+    <input type="text" onkeypress="debug(event)">
+
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>

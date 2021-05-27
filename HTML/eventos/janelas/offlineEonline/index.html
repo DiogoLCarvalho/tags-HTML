@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title> Evento offline e online</title>
+
+</head>
+
+<body ononline="debug(event)" onoffline="debug(event)"> 
+
+    <h1>Eventos Janelas</h1>
+    <h2> Evento offline e online</h2>
+    <p>Quando o navegador for desconectado ou conectado</p>
+
+    <!-- e = variavel = debug-->
+    <!-- o comando basicamente mostra o evento que ocorre antes e depois do evento -->
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type);
+            alert ('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Atributos</title>
+</head>
+
+<body>
+    <h1>Accesskey</h1>
+    <p>Define uma tecla de atalho para focar no elemento. Com a tecla ALT + "Nome dado ao accesskey". No caso ALT + "n"
+        ou "s". Lembrando que cada navegador varia de atalho. </p>
+
+    <button type="button" accesskey="n"> Novo</button>
+    <button type="button" accesskey="s"> Salvar</button>
+
+    <!-- Class -->
+    <h1>Class</h1>
+    <p>Classes que serão aplicadas ao um elemento</p>
+
+    <button type="button" class="botao"> Botão</button>
+    <a href="#" class="botao"> Botão</a>
+
+    <!--  -->
+    <h1>Contenteditable</h1>
+    <p>Define se um conteúdo pode ser editavel ou não. Contenteditable tem valores "True" e "False". Sendo "False" o
+        padrão. </p>
+
+    <p contenteditable="true">Clique aqui para editar!!!!</p>
+
+    <!-- Data -->
+    <h1>Data</h1>
+    <p>Armazenar dados em um elemento. Você Armazenar elementos que podem ser usados depois. Como o Javascript. Veja no inspecionar. </p>
+
+    <ul>
+        <li data-id="1" data-email="anegla@gmail.com">Angela Almeida
+        <li data-id="2" data-email="bruSilva@gmail.com">Bruna Silva
+    </ul>
+
+    <!--Dir  -->
+    <h1>Dir</h1>
+    <p>Define a direção de um elemento. Dir = Direction. Você tem que ler da direita pra esquerda?. Valores como "auto"
+        que verifica de acordo com o SO. "Ltr" = da esquerda para direita. "Rtl" = direita para esquerda</p>
+
+    <p dir="ltr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor dignissimos quibusdam, magnam
+        reiciendis unde, eligendi quia excepturi minima saepe ullam ab corporis blanditiis maxime aperiam labore. Culpa,
+        similique amet?</p>
+
+    <p dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor dignissimos quibusdam, magnam
+        reiciendis unde, eligendi quia excepturi minima saepe ullam ab corporis blanditiis maxime aperiam labore. Culpa,
+        similique amet?</p>
+
+    <!--  Draggable -->
+    <h1>Draggable</h1>
+    <p>Define se o elemento pode se arrasta ou não. Draggable tem valores "True" e "False".</p>
+
+    <button type="button" draggable="true"> ARRASTE</button>
+    <div id="quadrado" draggable="true"> ARRASTE </div>
+
+    <!-- Dropzone -->
+    <h1>Dropzone</h1>
+    <p>Elemento pode ser arrastado aqui. Para funcionar precisa de JS.</p>
+
+    <div class="drop" dropzone="copy"> </div>
+    
+    <!-- Hidden -->
+    <h1>Hidden</h1>
+    <p>Define um elemento oculto</p>
+
+    <p>A tag de baixo está oculta</p>
+    <p hidden> Ocultado</p>
+
+
+    <!-- Lang -->
+    <h1>lang</h1>
+    <p>Define a linguagem de um elemento. Lang= Language</p>
+
+    <h2>Olá mundo!</h2>
+    <h2 lang="en">Hello World!</h2>
+    <h2 lang="fr">Bonjour le monde!</h2>
+
+    <!-- Spellcheck  -->
+    <h1>Spellcheck</h1>
+    <p>Verificação Ortográfica. True e False. </p>
+
+    <p spellcheck="true" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptate possimus nam assumenda repellendus quas cupiditate ad consequatur rem omnis laboriosam aperiam laborum iusto natus? Sapiente consequuntur odio quae vero?</p>
+    
+
+    <!-- Tabindex -->
+    <h1>Tabindex</h1>
+    <p>Tabulação da página. Muda a order quando você usa a TAB. No caso esta 1, 3,2. </p>
+    <form>
+        <input type="text" placeholder="texto" tabindex="1">
+        <input type="password" placeholder="senha" tabindex="3">
+        <input type="button" value="Enviar" tabindex="2">
+    </form>
+
+    <!-- Title -->
+    <h1>title</h1>
+    <p>Informações em um elemento. Boa semântica</p>
+
+    <a href="https://www.youtube.com/watch?v=y0hXWQyvZIY&list=PL-u8JWLN6xau0QpzuOTeTI954SsIGEsVA&index=17" title="Vídeo - Atributo title do HTML 5 - S01E15">Passe em cima</a>
+
+    <!-- Translate -->
+    <h1>Translate</h1>
+    <p>Traduzir ou não. Tente traduzir. </p>
+
+    <p translate="yes">Hello World </p>
+    <p translate="no"> Do are you hungry? </p>
+
+</body>
+
+</html>

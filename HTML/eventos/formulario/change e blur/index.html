@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title> Change e Blur</title>
+
+</head>
+
+<body> 
+    <h1>Eventos de formulário</h1>
+    <h2>Change e Blur</h2>
+    <p>Change quando um campo é alterado. E o Blur quando perde o foco</p>
+
+    <input type="text" onchange="debug(event)" onblur="debug(event)">
+
+    <!-- e = variavel = debug-->
+    <!-- o comando basicamente mostra o evento que ocorre antes e depois do evento -->
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type);
+            alert ('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>

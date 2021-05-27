@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title> Contextmenu  </title>
+
+</head>
+
+<body> 
+    <h1>Eventos de formulário</h1>
+    <h2>Contextmenu</h2>
+    <p>Quando o usuario aperta o botão direito do mouse no input</p>
+
+    <input type="text" oncontextmenu="debug(event)" >
+
+    <!-- e = variavel = debug-->
+    <!-- o comando basicamente mostra o evento que ocorre antes e depois do evento -->
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type);
+            alert ('Evento: ' + e.type);
+        }
+    </script>
+</body>
+
+</html>
