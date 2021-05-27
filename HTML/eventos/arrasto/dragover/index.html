@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event: dragover  </title>
+    <style>
+        #drag{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+        #target{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evento de arrasto</h1>
+    <h2>dragover  </h2>
+    <p>Quando um elemento passa em cima de outro</p>
+
+    <div id="drag" ondrag="debug(event)" draggable="true"></div>
+    <div id="target" ondragover="debug(event)"></div>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>
