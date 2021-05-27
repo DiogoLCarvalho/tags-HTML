@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+</head>
+<body>
+    <h1>Evento de transferência</h1>
+    <h2>Copy</h2>
+    <p>Quando um texto é copiado. Pode colocar no body que funciona com todos os elementos ou apenas em uma tag. </p>
+
+    <h3>Copie o texto abaixo:</h3>
+    <p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo voluptas inventore similique blanditiis illum quis corrupti voluptates accusamus, libero at minus a dicta possimus nemo labore esse perferendis iusto!</p>
+
+    <script>
+        function debug(e){
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>

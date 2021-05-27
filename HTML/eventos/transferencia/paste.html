@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste</title>
+</head>
+<body>
+    <h1>Evento de transferência</h1>
+    <h2>Paste</h2>
+    <p>Quando um texto é Colado. Pode colocar no body que funciona com todos os elementos ou apenas em uma tag. </p>
+
+    <h3>Copie o texto abaixo e cole no input:</h3>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo voluptas inventore similique blanditiis illum quis corrupti voluptates accusamus, libero at minus a dicta possimus nemo labore esse perferendis iusto!</p>
+
+    <input type="text"onpaste="debug(event)">
+    <script>
+        function debug(e){
+            console.log('Evento: '+ e.type);
+        }
+    </script>
+</body>
+</html>
