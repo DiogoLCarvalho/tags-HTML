@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag de tabelas</title>
+    <style>
+        table {
+            width: 100%;
+            font-family: sans-serif;
+        }
+
+        tbody {
+            background-color: aquamarine;
+        }
+        tfoot tr{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tag de tabelas</h1>
+    <h2>Table</h2>
+    <p>Definir uma tabela</p>
+    <p>É necessario usar tags tr e td para criar linhas e células</p>
+    <p>tabelas mais complexa podem conter as tags colgroup, thead, tfoot, tbody, col, caption</p>
+    <p></p>
+    <p></p>
+
+    <h2>tr</h2>
+    <p>Definir uma linha</p>
+
+    <h2>td</h2>
+    <p>Definir uma célula</p>
+    <h3>Atributos:</h3>
+    <ul>
+        <li>colspan = Define o número de colunas que esta célula deve ter</li>
+        <li>headers = Define uma ou mais células de cabeçalho</li>
+        <li>rowspan = Define o númeor de linhas que esta célula deve ocupar</li>
+    </ul>
+
+    <h2>thead</h2>
+    <p>Agrupar o conteúdo do cabeçalho</p>
+
+    <h2>tbody</h2>
+    <p>Usada para agrupar o conteúdo do corpo da tabela</p>
+
+    <h2>tfoot</h2>
+    <p>Usada para agrupar o conteúdo do rodapé da tabela</p>
+
+    <h2>tr</h2>
+    <p>Cabeçalho dentro da thead</p>
+    <h3>Atributos:</h3>
+    <ul>
+        <li>abbr</li>
+        <li>cosplan</li>
+        <li>headers</li>
+        <li>rowspan</li>
+        <li>scope = define a cecula é um cabeçalho de linha, coluna, etc</li>
+        <li>sorted = direção da ordem da coluna</li>
+    </ul>
+
+    <h2>caption</h2>
+    <p>Definir uma legenda da tabela</p>
+
+    <table>
+        <caption>Um exemplo de tabela</caption>
+        <tbody>
+            <thead>
+                <th sorted="reversed">Linha 1</th>
+                <th abbr="Lin">Linha 2</th>
+                <th>Linha 3</th>
+            </thead>
+            <tr>
+                <td colspan="2">A1</td>
+                <td>C1</td>
+            </tr>
+            <tr>
+                <td >A2</td>
+                <td rowspan="2">B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td >A3</td>
+                <td>B3</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Rodapé 1</td>
+                <td>Rodapé 2</td>
+                <td>Rodapé 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
