@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag input</title>
+    <style>
+        ul li{
+            padding: 15px;
+        }
+        input{
+            display: block;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tag input</h1>
+    <p>Definir um campo de entrada do usuário</p>
+    <p>Inserir dados ou interagir com a páginas</p>
+
+    <h2>Atributos:</h2>
+
+    <ul>
+        <li>accept = Define o tipo de arquivo aceito para ser selecionado (o type tem que ser file, no caso o input só receberia arquivos do tipo de imagem, etc)</li>
+        <li>alt = Define um texto alternativo (type = image)</li>
+        <li>autocomplete = Define se o campo pode se auto completar</li>
+        <li>autofocus = Define o foco neste campo quando a página é carregada</li>
+        <li>checked = Define se o campo está marcado/selecionado (type = checkbox ou radio) </li>
+        <li>dirname = Define o nome do campo que será enviado informando a direção do texto escrito</li>
+        <li>disabled = Define o campo como desabilitado</li>
+        <li>form = Define qual o formulário que esse campo pertence</li>
+        <li>formaction = Define qual URL de envio desse campo (type = submit ou Image)</li>
+        <li>formenctype = Define qual enctype do formulario ao enviar o campo (type = submit ou image)</li>
+        <li>formmethod = Define qual será o método do formulário ao clicar neste botão(type = submit ou image)</li>
+        <li>formnovalidate = Desativa a validação do formulário ao clicar neste botão</li>
+        <li>formtarget = Define qual será o target do formulário ao clicar neste botão</li>
+        <li>height = Define a altura do campo(type = image)</li>
+        <li>list = Define qual tag datalist está vinculada</li>
+        <li>max = Define uma valor maximo</li>
+        <li>maxlength = Define um comprimento máximo de caracteres</li>
+        <li>min = Define um valor minimo</li>
+        <li>multiple = Define se o usuário pode entrar com mais de um valor neste campo(type = file)</li>
+        <li>name = Define o nome do campo</li>
+        <li>pattern = Define uma expressão regular para validação do campo </li>
+        <li>placeholder = Define um texto de dica que descreve o valor esperado</li>
+        <li>readonly = Define o campo somente de leitura</li>
+        <li>required = Define o campo obrigatório para envio do formuário</li>
+        <li>size = Define a largura em caracteres do campo</li>
+        <li>src = Define a fonte do arquivo(type = image)</li>
+        <li>step = Define o intervalo de número permitidos</li>
+        <li>type = Defineo tipo de campo </li>
+        <li>value = Define o valor inicial do campo</li>
+        <li>width = Define a largura do campo (type = image)</li>
+    </ul>
+
+    <hr>
+    
+    <form action="">
+        <input type="text">  
+        <input type="checkbox" checked>
+        <input type="radio" checked name="sexo"> <input type="radio" name="sexo"> 
+        <input type="color" value="#ffffff"> 
+        <input type="date"> 
+        <input type="datetime-local"> 
+        <input type="email"> 
+        <input type="file" accept="image/png" multiple> 
+        <input type="hidden" name="input-oculto"> 
+        <input type="month"> 
+        <input type="number" step="2"> 
+        <input type="password"> 
+        <input type="reset" value="Redefinir"> 
+        <input type="button" value="Botão"> 
+        <input type="search"> 
+        <input type="tel"> 
+        <input type="time"> 
+        <input type="url"> 
+        <input type="week"> 
+        <input type="range" min="0" max="100" value="50"> 
+        <input type="submit" value="enviar"> 
+    </form>
+
+</body>
+</html>
