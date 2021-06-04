@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag canvas</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body >
+    <h1>Tag canvas  </h1>
+    <p>Definir um quadro de desenho</p>
+    <p>A tag só reserva o espaço para utilizada precisa de JS</p>
+
+    <canvas id="quadro">
+
+    </canvas>
+
+    <script>
+        const quadro = document.querySelector('quadro')
+        const contexto = quadro.getContext('2d')
+
+        contexto.fillStyle = '#ffffff'
+        contexto.fillRect(0,0,100,100)
+    </script>
+</body>
+</html>
